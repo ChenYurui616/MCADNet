@@ -6,7 +6,7 @@ We provide saliency maps of our method at [MCADNet_Salmap](https://pan.baidu.com
 Download swin224 at [swin224](https://pan.baidu.com/s/1aopiSbXygq5XapcFitVBrA?pwd=3q7c), and put it in "./pth/", 
 modify paths of data, then run train.py.
 
-The pre-trained weights for our method at [MCADNet_Pre](https://pan.baidu.com/s/1FCVAI9ixSk3f80i6D5FXRQ?pwd=ea2v). If you want to use our trained model,download and put it in "./weight/", then run test.py.
+The pre-trained weights for our method at [MCADNet_Pre](https://pan.baidu.com/s/1FCVAI9ixSk3f80i6D5FXRQ?pwd=ea2v). If you want to use our trained model, download and put it in "./weight/", then run test.py.
 # Datasets
 - train dataset: 
   gts and images download at here:[coco_duts](https://pan.baidu.com/s/1BYO5WADwvSFoiSYQ1LteFg?pwd=tj3v), (Please be careful to unpack both 'images_1' and 'images_2' into the same folder 'images','gts' can be unpacked directly into the 'coco_duts' folder).
