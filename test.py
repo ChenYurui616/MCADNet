@@ -76,7 +76,7 @@ if __name__ == '__main__':
                         type=int,
                         help='input size')
     parser.add_argument('--param_root', default='./weight/', type=str, help='model folder')
-    parser.add_argument('--save_root', default='./prediction1/', type=str, help='Output folder')
+    parser.add_argument('--save_root', default='./prediction/', type=str, help='Output folder')
 
     args = parser.parse_args()
 
