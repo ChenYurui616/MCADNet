@@ -58,21 +58,22 @@ The structure of the data is as follows:
 
 # Directory
 - Root<br>
-- ├ evaluation<br>
-- ├ evaluate<br>
-- ├ model<br>
-- ├ dataset<br>
-- ├ predicton<br>
-- ├ weight<br>
+├ evaluation<br>
+├ evaluator<br>
+├ dataset<br>
+├ model<br>
+├ predicton<br>
+├ pth<br>
+├ weight<br>
 
 # Training
 Download swin224 at [swin224](https://pan.baidu.com/s/1aopiSbXygq5XapcFitVBrA?pwd=3q7c), and put it in "./pth/", 
 modify paths of data, then run ```python train.py```.
-
-The pre-trained weights for our method at [MCADNet_Pre](https://pan.baidu.com/s/1FCVAI9ixSk3f80i6D5FXRQ?pwd=ea2v). If you want to use our trained model, download and put it in "./weight/", then run test.py.
 # Testing
 After training, the weights are stored in the 'weight' folder, then change the quotes in lines 22 and 26 of the test file to <br>```modelname = os.path.join(args.param_root, 'epochname')
 ``` and <br>```yynet_dict = torch.load(os.path.join(args.param_root, 'epochname'))```,<br>where 'epochname' refers to the best weight name in training.<br>
-then run ```python test.py```.
+then run ```python test.py```.<br>
+The pre-trained weights for our method at [MCADNet_Pre](https://pan.baidu.com/s/1FCVAI9ixSk3f80i6D5FXRQ?pwd=ea2v). If you want to use our trained model, download and put it in "./weight/", then change the quotes in lines 22 and 26 of the test file to <br>```modelname = os.path.join(args.param_root, '93.pt')
+``` and <br>```yynet_dict = torch.load(os.path.join(args.param_root, '93.pt'))```,then run ```python test.py```.<br>
 # Evaluating
 After testing, the prediction maps are stored in the 'prediction' folder,then run ```python evaluate.py```.
