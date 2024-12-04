@@ -65,8 +65,8 @@ config = Config()
 
 # Prepare dataset
 if args.trainset == 'coco_duts':
-    train_img_path = '/hy-tmp/dataset/train/coco_duts/images/'
-    train_gt_path = '/hy-tmp/dataset/train/coco_duts/gts/'
+    train_img_path = './dataset/train/coco_duts/images/'
+    train_gt_path = './dataset/train/coco_duts/gts/'
     train_loader = get_loader(train_img_path,
                               train_gt_path,
                               args.size,
@@ -83,16 +83,16 @@ else:
 
 for testset in ['CoCA']:
     if testset == 'CoCA':
-        test_img_path = '/hy-tmp/dataset/test/images/CoCA/'
-        test_gt_path = '/hy-tmp/dataset/test/gts/CoCA/'
+        test_img_path = './dataset/test/images/CoCA/'
+        test_gt_path = './dataset/test/gts/CoCA/'
         saved_root = os.path.join(args.save_root, 'CoCA')
     elif testset == 'CoSOD3k':
-        test_img_path = '/hy-tmp/dataset/test/images/CoSOD3k/'
-        test_gt_path = '/hy-tmp/dataset/test/gts/CoSOD3k/'
+        test_img_path = './dataset/test/images/CoSOD3k/'
+        test_gt_path = './dataset/test/gts/CoSOD3k/'
         saved_root = os.path.join(args.save_root, 'CoSOD3k')
     elif testset == 'CoSal2015':
-        test_img_path =  '/hy-tmp/dataset/test/images/CoSal2015/'
-        test_gt_path = '/hy-tmp/dataset/test/gts/CoSal2015/'
+        test_img_path =  './dataset/test/images/CoSal2015/'
+        test_gt_path = './dataset/test/gts/CoSal2015/'
         saved_root = os.path.join(args.save_root, 'CoSal2015')
     else:
         print('Unkonwn test dataset')
